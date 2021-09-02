@@ -1,0 +1,20 @@
+{
+    "name": "npm-project",
+    "version": "1.0.0",
+    "description": "API test automation for Payment System example",
+    "scripts": {
+        "test": "npx mocha --config .mocharc.js"
+    },
+    "keywords": [],
+    "author": "Iryna Anpilogova",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.14.8",
+        "@babel/core": "^7.15.0",
+        "@babel/plugin-transform-runtime": "^7.15.0",
+        "@babel/preset-env": "^7.15.0",
+        "@babel/register": "^7.15.3",
+        "chai": "^4.3.4",
+        "mocha": "^9.1.1"
+    }
+}
