@@ -27,4 +27,15 @@ describe('auth', function() {
 
     });
 
+    it('login with wrong credentials should return error', function() {
+        request
+            .post('/auth')
+            .send({ login: 'wrong', password: 'wrong' })
+            .end(function(err, res) {
+                expect(res.statusCode).to.eq(405);
+                expect(res.body.token).not.to.be.eq('Wrong login or passworrd');
+            });
+
+    });
+
 });
